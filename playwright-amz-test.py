@@ -2,7 +2,7 @@ from playwright.sync_api import sync_playwright
 
 # this is a demo and is for education purposes only.
 
-asins = ['B07PZR3PVB', 'B00Q2KEVA2', 'B08XMPGL7Q', 'B014RD6RC0', 'B08WJ6MGKJ']
+asins = ['B00Q2KEVA2', 'B08XMPGL7Q', 'B014RD6RC0', 'B08J2FYYYT']
 
 with sync_playwright() as p:
     browser = p.chromium.launch()
@@ -24,3 +24,4 @@ for asin in asins:
 
     print(product)
 browser.close()
+
